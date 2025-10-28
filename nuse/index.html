@@ -9,43 +9,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --terracotta:#A45A3B;
-  --terracotta-dark:#6B3B1F;
-  --cream:#F8F4EF;
-  --paper:#FFFCF9;
-  --text:#2B1B12;
-  --white:#ffffff;
-  --border:#E9DCD3;
+  --terracotta:#A45A3B; --terracotta-dark:#6B3B1F;
+  --cream:#F8F4EF; --paper:#FFFCF9; --text:#2B1B12; --white:#ffffff; --border:#E9DCD3;
   --shadow:0 14px 26px rgba(107,59,31,.18);
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
 body{margin:0;color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--paper)}
 a{color:inherit;text-decoration:none}
 .container{max-width:1100px;margin:0 auto;padding:0 22px}
+
+/* Header */
 header{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--border);z-index:50}
 .nav{height:66px;display:flex;align-items:center;justify-content:space-between}
 .nav a{padding:10px 12px;border-radius:12px;color:var(--terracotta-dark);font-weight:700}
 .nav a:hover{background:rgba(164,90,59,.12)}
 .brand{display:flex;align-items:center;gap:10px;color:var(--terracotta-dark);font-weight:800}
 .brand .dot{width:28px;height:28px;border-radius:10px;background:var(--terracotta);box-shadow:var(--shadow)}
-/* Cute Pills */
-.pill{display:inline-flex;align-items:center;gap:8px;background:var(--cream);border:1px solid var(--border);border-radius:999px;padding:10px 14px;margin:6px 8px 0 0;box-shadow:var(--shadow)}
+
+/* Pills */
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--cream);border:1px solid var(--border);
+  border-radius:999px;padding:10px 14px;margin:6px 8px 0 0;box-shadow:var(--shadow)}
+
 /* Hero */
 .hero{position:relative}
 .hero .hero-img{width:100%;height:58vh;min-height:440px;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.02)}
 .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.45))}
-.hero .hero-text{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:left;width:min(1100px,92%);color:var(--white)}
-.hero h1{font-size:clamp(36px,6vw,72px);line-height:1.02;margin:0 0 10px;font-weight:900;letter-spacing:.2px;text-shadow:0 4px 24px rgba(0,0,0,.35)}
+.hero .hero-text{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:left;
+  width:min(1100px,92%);color:var(--white)}
+.hero h1{font-size:clamp(36px,6vw,72px);line-height:1.02;margin:0 0 10px;font-weight:900;letter-spacing:.2px;
+  text-shadow:0 4px 24px rgba(0,0,0,.35)}
 .hero p.sub{opacity:.96;font-size:clamp(16px,2.2vw,18px)}
 .hero .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:13px 18px;border-radius:16px;font-weight:800;border:2px solid var(--terracotta-dark);box-shadow:var(--shadow);transition:.2s transform}
+.btn{padding:13px 18px;border-radius:16px;font-weight:800;border:2px solid var(--terracotta-dark);
+  box-shadow:var(--shadow);transition:.2s transform}
 .btn:hover{transform:translateY(-1px)}
 .btn.primary{background:var(--cream);color:var(--terracotta-dark)}
 .btn.outline{background:rgba(255,255,255,.15);color:#fff;border-color:var(--white)}
+
 /* Sections */
 section{padding:70px 0}
 .section-brown{background:var(--terracotta);color:var(--white)}
-.section-brown h2, .section-brown p, .section-brown li{color:var(--white)}
+.section-brown h2,.section-brown p,.section-brown li{color:var(--white)}
 h2{font-size:clamp(24px,3vw,32px);margin:0 0 14px}
 .card{background:var(--white);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
 .grid{display:grid;gap:18px}
@@ -53,14 +57,16 @@ h2{font-size:clamp(24px,3vw,32px);margin:0 0 14px}
 .cols-3{grid-template-columns:1fr} @media(min-width:1000px){.cols-3{grid-template-columns:1fr 1fr 1fr}}
 .figure{border-radius:18px;overflow:hidden;border:1px solid var(--border);background:#000;box-shadow:var(--shadow)}
 .figure img{width:100%;display:block}
+
 /* Team single profile */
-.team{display:grid;gap:22px;grid-template-columns:1fr} 
+.team{display:grid;gap:22px;grid-template-columns:1fr}
 @media(min-width:900px){.team{grid-template-columns:320px 1fr;align-items:center}}
-.team .avatar{width:280px;height:280px;border-radius:22px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);background:#fff;margin:auto}
+.team .avatar{width:280px;height:280px;border-radius:22px;overflow:hidden;border:1px solid var(--border);
+  box-shadow:var(--shadow);background:#fff;margin:auto}
 .team .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.team h3{margin:0 0 6px}
+
 footer{padding:44px 0;text-align:center;color:#6d5042;border-top:1px solid var(--border)}
-ul, ol{padding-left:18px}
+ul,ol{padding-left:18px}
 </style>
 </head>
 <body>
@@ -81,14 +87,15 @@ ul, ol{padding-left:18px}
 <main>
   <!-- HERO -->
   <section class="hero">
-    <img class="hero-img" src="assets/hero.jpg" alt="NUSE hero" />
+    <!-- ROOT-RELATIVE path with cache-buster -->
+    <img class="hero-img" src="/esse-portfolio/nuse/assets/hero.jpg?v=3" alt="NUSE hero" />
     <div class="overlay"></div>
     <div class="hero-text">
       <h1>Empowering Women Through<br/>Voice, Data and Dignity</h1>
       <p class="sub">AI driven financial access for women entrepreneurs in emerging markets</p>
       <div class="cta">
         <a class="btn primary" href="#contact">Learn More</a>
-        <a class="btn outline" href="../" target="_blank" rel="noreferrer">Back to Esse Portfolio</a>
+        <a class="btn outline" href="/esse-portfolio/" rel="noreferrer">Back to Esse Portfolio</a>
       </div>
       <div class="pill">🌿 Local languages</div>
       <div class="pill">📈 Simple insights</div>
@@ -105,7 +112,7 @@ ul, ol{padding-left:18px}
         <p>The platform is designed for women who operate in the informal economy and often lack access to bookkeeping tools or formal financial systems. By combining technology with cultural understanding, Nuse gives every entrepreneur the ability to track income, grow savings and make informed decisions.</p>
       </div>
       <figure class="figure">
-        <img src="assets/about.jpg" alt="About photo">
+        <img src="/esse-portfolio/nuse/assets/about.jpg?v=3" alt="About photo">
       </figure>
     </div>
   </section>
@@ -153,10 +160,12 @@ ul, ol{padding-left:18px}
     </div>
   </section>
 
-  <!-- TEAM single profile -->
+  <!-- TEAM (single profile) -->
   <section id="team">
     <div class="container team">
-      <div class="avatar"><img src="assets/team.jpg" alt="Esse Komlanvi headshot"></div>
+      <div class="avatar">
+        <img src="/esse-portfolio/nuse/assets/team.jpg?v=3" alt="Essivi Esse Komlanvi headshot">
+      </div>
       <div>
         <h2>Team</h2>
         <h3>Essivi “Esse” Komlanvi</h3>
@@ -186,3 +195,4 @@ ul, ol{padding-left:18px}
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
