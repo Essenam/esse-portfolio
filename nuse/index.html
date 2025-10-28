@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NUSE — Voice, Data & Dignity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --terracotta:#A45A3B;  /* warm brown */
+  --terracotta-dark:#6B3B1F;
+  --cream:#F5F1EC;
+  --paper:#FFFDFB;
+  --text:#2B1B12;
+  --white:#ffffff;
+  --border:#E9DCD3;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--paper)}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 22px}
+/* Nav */
+header{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--border);z-index:50}
+.nav{height:66px;display:flex;align-items:center;justify-content:space-between}
+.nav a{padding:10px 12px;border-radius:10px;color:var(--terracotta-dark);font-weight:600}
+.nav a:hover{background:rgba(164,90,59,.12)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--terracotta-dark);font-weight:800}
+.brand .dot{width:28px;height:28px;border-radius:8px;background:var(--terracotta)}
+/* Hero */
+.hero{position:relative}
+.hero .hero-img{width:100%;height:56vh;min-height:420px;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.02)}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.45))}
+.hero .hero-text{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:left;width:min(1100px,92%);color:var(--white)}
+.hero h1{font-size:clamp(36px,6vw,72px);line-height:1.02;margin:0 0 10px;font-weight:800;letter-spacing:.2px}
+.hero p.sub{opacity:.92;font-size:clamp(16px,2.2vw,18px)}
+.hero .cta{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 18px;border-radius:999px;font-weight:700;border:2px solid var(--terracotta-dark)}
+.btn.primary{background:var(--cream);color:var(--terracotta-dark)}
+.btn.primary:hover{background:#fff}
+.btn.outline{background:transparent;color:#fff;border-color:var(--white)}
+/* Sections */
+section{padding:64px 0}
+.section-brown{background:var(--terracotta);color:var(--white)}
+.section-brown h2, .section-brown p, .section-brown li{color:var(--white)}
+h2{font-size:clamp(24px,3vw,32px);margin:0 0 14px}
+.lead{color:#614336}
+.card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.grid{display:grid;gap:16px}
+.cols-2{grid-template-columns:1fr} @media(min-width:980px){.cols-2{grid-template-columns:1.1fr .9fr}}
+.cols-3{grid-template-columns:1fr} @media(min-width:1000px){.cols-3{grid-template-columns:1fr 1fr 1fr}}
+.figure{border-radius:16px;overflow:hidden;border:1px solid var(--border);background:#000}
+.figure img{width:100%;display:block}
+footer{padding:40px 0;text-align:center;color:#6d5042;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="dot"></span>NUSE</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#solution">The Solution</a>
+      <a href="#impact">Impact</a>
+      <a href="#partners">For Partners</a>
+      <a href="#support">Support NUSE</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-img" src="assets/hero.jpg" alt="NUSE hero" />
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Empowering Women Through<br/>Voice, Data, and Dignity</h1>
+      <p class="sub">AI‑Driven Financial Access for Women Entrepreneurs in Emerging Markets</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Learn More</a>
+        <a class="btn outline" href="../" target="_blank" rel="noreferrer">Back to Esse Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (brown) -->
+  <section id="about" class="section-brown">
+    <div class="container grid cols-2" style="align-items:center">
+      <div>
+        <h2>About</h2>
+        <p>NUSE is a voice‑first AI platform that provides financial access in local languages to empower women entrepreneurs. Our mission is to offer access to microloans, business insights, savings, education, and insurance — starting with rural women in the informal economy across Togo and West Africa.</p>
+        <p>Join us in building financial inclusion and economic empowerment.</p>
+        <a class="btn primary" href="#solution">Explore More</a>
+      </div>
+      <figure class="figure">
+        <img src="assets/about.jpg" alt="About photo">
+      </figure>
+    </div>
+  </section>
+
+  <!-- SOLUTION (cream) -->
+  <section id="solution">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h2>The Solution</h2>
+        <ol>
+          <li>WhatsApp voice note → speech‑to‑text</li>
+          <li>NLP extracts amount, category, merchant, note</li>
+          <li>Transaction saved to a secure Sheet</li>
+          <li>Weekly insights + repayment reminders via WhatsApp</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+          <li>Local‑language capture for sales, expenses & savings</li>
+          <li>AI insights and micro‑lessons to build financial habits</li>
+          <li>Power BI dashboards for participants and partners</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="container">
+      <h2>Impact</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Access</h3><p>Lower the barrier to credit assessment through consistent records captured by voice.</p></div>
+        <div class="card"><h3>Education</h3><p>Micro‑lessons and nudges to build savings and manage costs.</p></div>
+        <div class="card"><h3>Outcomes</h3><p>Track revenue trends, repayment on time, and inventory decisions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="section-brown">
+    <div class="container">
+      <h2>For Partners</h2>
+      <p>We collaborate with MFIs, NGOs, and local associations to run 3‑ to 6‑month pilots. Partners receive dashboards, cohort insights, and lightweight onboarding materials.</p>
+      <div class="card" style="color:var(--text)">
+        <ul>
+          <li>Co‑design the pilot and curriculum</li>
+          <li>Provide secure data access & training</li>
+          <li>Measure outcomes and publish learnings</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support">
+    <div class="container">
+      <h2>Support NUSE</h2>
+      <p class="lead">Join as a donor, technical advisor, or research collaborator. Your support helps us scale inclusive finance.</p>
+      <div class="card">
+        <p>Email <a href="mailto:essiviessenam.komlanvi@gmail.com">essiviessenam.komlanvi@gmail.com</a> to discuss opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section-brown">
+    <div class="container grid cols-3">
+      <div class="card"><h3>Esse Komlanvi</h3><p>Founder — IT & Analytics</p></div>
+      <div class="card"><h3>Advisors</h3><p>Micro‑finance, Data Science, Policy</p></div>
+      <div class="card"><h3>Partners</h3><p>Local associations and MFIs</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Togo · Email: <a href="mailto:essiviessenam.komlanvi@gmail.com">essiviessenam.komlanvi@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> NUSE</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
