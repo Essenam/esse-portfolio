@@ -25,14 +25,11 @@ a{color:inherit;text-decoration:none}
 .badge{border:1px solid var(--border);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04);margin:6px 6px 0 0;display:inline-block}
 .btn{padding:11px 16px;border-radius:12px;font-weight:700;border:1px solid var(--border);display:inline-block;margin:10px 10px 0 0}
 .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b1020;border:none}
-.photo-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.35);text-align:center}
-.photo{width:200px;height:200px;border-radius:999px;object-fit:cover;border:6px solid rgba(255,255,255,.9);box-shadow:0 0 0 8px rgba(139,92,246,.15), 0 16px 40px rgba(0,0,0,.4)}
+.photo-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.35);text-align:center;min-height:200px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic}
 section{padding:56px 0;border-top:1px solid var(--border)}h2{font-size:clamp(22px,3vw,30px);margin:0 0 18px}
 .grid{display:grid;gap:16px}.cols-2{grid-template-columns:1fr}@media(min-width:900px){.cols-2{grid-template-columns:1fr 1fr}}
 .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 12px 42px rgba(0,0,0,.25)}
 .meta{color:var(--muted);font-size:.95rem}
-.thumb{border-radius:14px;overflow:hidden;border:1px solid var(--border);display:block;margin-bottom:10px}
-.thumb img{width:100%;height:auto;display:block}
 .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 10px;margin:8px 6px 0 0}
 .divider{height:2px;background:linear-gradient(90deg,transparent,rgba(139,92,246,.6),rgba(34,211,238,.6),transparent);border-radius:999px;margin:8px 0 18px}
 footer{padding:40px 0;color:var(--muted);text-align:center}
@@ -57,7 +54,7 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
   <section class="hero">
     <div>
       <h1 class="title">Driving digital transformation through data, analytics, and AI.</h1>
-      <p class="subtitle">I’m passionate about empowering people and organizations to create measurable impact through technology and insight‑driven innovation.</p>
+      <p class="subtitle">I’m passionate about empowering people and organizations to create measurable impact through technology and insight-driven innovation.</p>
       <span class="badge">Power BI · Python · SQL</span>
       <span class="badge">Forecasting · A/B Testing</span>
       <span class="badge">LLMs · NLP · RPA</span>
@@ -70,7 +67,7 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
       </div>
     </div>
     <div class="photo-card">
-      <img class="photo" src="headshot.jpg" alt="Essivi ‘Esse’ Komlanvi headshot">
+      Headshot photo placeholder
     </div>
   </section>
 
@@ -80,9 +77,9 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
     <div class="card">
       <ul style="list-style:none;margin:8px 0;padding:0">
         <li><strong>Public Sector Transformation:</strong> Digitized accounting systems for 200+ Italian municipalities using SQL and Python, reducing manual workload by 40% and increasing compliance.</li>
-        <li><strong>Predictive Modeling:</strong> Built R‑based models at Generali detecting outlier risk patterns, reducing portfolio risk by 15% and supporting €138M in profit.</li>
+        <li><strong>Predictive Modeling:</strong> Built R-based models at Generali detecting outlier risk patterns, reducing portfolio risk by 15% and supporting €138M in profit.</li>
         <li><strong>Data Visualization:</strong> Designed Power BI dashboards at the University of St. Thomas, cutting reporting turnaround from three weeks to one and improving data accuracy.</li>
-        <li><strong>E‑commerce Behavioral Analysis:</strong> Applied Random Forest to cart‑to‑purchase data, identifying drop‑off patterns and recovering ≈ $239K in potential lost revenue.</li>
+        <li><strong>E-commerce Behavioral Analysis:</strong> Applied Random Forest to cart-to-purchase data, identifying drop-off patterns and recovering ≈ $239K in potential lost revenue.</li>
         <li><strong>AI SaaS Platform:</strong> Building a platform to measure outreach and financial activity for women entrepreneurs in emerging markets, integrating NLP and Python automation to turn raw data into actionable insights.</li>
       </ul>
     </div>
@@ -96,9 +93,19 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
         <h3>Graduate Business Operations Analyst — University of St. Thomas</h3>
         <div class="meta">Jul 2024 – Present · St. Paul, MN</div>
         <ul>
-          <li>Built Power BI dashboards for executive reporting; improved decision‑making speed by ~30%.</li>
+          <li>Built Power BI dashboards for executive reporting; improved decision-making speed by ~30%.</li>
           <li>Analyzed engagement data and delivered UX improvements, boosting platform use by ~29%.</li>
           <li>Automated compliance and operational reports for leadership.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>SUPPLY CHAIN REPORTING SUITE – CAPSTONE PROJECT</h3>
+        <div class="meta">Sep 2025 – Present · Flagstone Foods | University of St. Thomas</div>
+        <p><em>Enterprise Dashboards | Supply Chain Management | Forecast Models</em></p>
+        <ul>
+          <li>Partnered with cross-functional teams to define KPIs and translate business requirements into Agile Power BI dashboards integrating SAP forecasting data.</li>
+          <li>Engineered data models and ETL pipelines unifying production, inbound, and sales data for real-time supply-chain visibility.</li>
+          <li>Built SKU-level risk indicators and automated feedback loops to enhance forecast accuracy, schedule adherence, and service reliability.</li>
         </ul>
       </div>
       <div class="card">
@@ -106,7 +113,7 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
         <div class="meta">Nov 2017 – Jul 2024 · Trieste, Italy</div>
         <ul>
           <li>Led digitalization of accounting systems for 200+ municipalities; reduced manual workload by 40%.</li>
-          <li>Developed forecasting tools and dashboards; shortened month‑end close by two days.</li>
+          <li>Developed forecasting tools and dashboards; shortened month-end close by two days.</li>
           <li>Delivered 500+ trainings; authored documentation and mentored junior consultants.</li>
         </ul>
       </div>
@@ -126,7 +133,7 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
     <div class="divider"></div>
     <div class="card">
       <ul>
-        <li><strong>Technical:</strong> Python (pandas, scikit‑learn), SQL, Power BI (DAX), Forecasting (WAPE, MAPE, Bias, TS), R, Alteryx, LLMs & Agents, NLP, SAP, AWS (basics)</li>
+        <li><strong>Technical:</strong> Python (pandas, scikit-learn), SQL, Power BI (DAX), Forecasting (WAPE, MAPE, Bias, TS), R, Alteryx, LLMs & Agents, NLP, SAP, AWS (basics)</li>
         <li><strong>Project & Leadership:</strong> PRINCE2 Certified, Requirements Gathering, Stakeholder Engagement, Change Management, Data Strategy, BI Governance</li>
       </ul>
     </div>
@@ -137,21 +144,18 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
     <div class="divider"></div>
     <div class="grid cols-2">
       <a class="card" href="https://github.com/Essenam/cart-to-purchase-analysis" target="_blank" rel="noreferrer">
-        <span class="thumb"><img src="images/cart-cover.png" alt="Cart-to-Purchase Analysis cover"></span>
         <h3>cart-to-purchase-analysis</h3>
-        <div class="meta">Marketing analytics project to investigate a decline in cart‑to‑purchase conversion.</div>
-        <div><span class="pill">Python</span><span class="pill">scikit‑learn</span><span class="pill">Random Forest</span></div>
+        <div class="meta">Marketing analytics project to investigate a decline in cart-to-purchase conversion.</div>
+        <div><span class="pill">Python</span><span class="pill">scikit-learn</span><span class="pill">Random Forest</span></div>
       </a>
       <a class="card" href="https://github.com/Essenam/Venice-Airbnb-listings-and-real-estate-investment-analytics" target="_blank" rel="noreferrer">
-        <span class="thumb"><img src="images/venice-cover.png" alt="Venice Airbnb analytics cover"></span>
-        <h3>Venice‑Airbnb‑listings‑and‑real‑estate‑investment‑analytics</h3>
-        <div class="meta">Data‑driven insights for Airbnb investors in Venice using regression analysis and Power BI.</div>
+        <h3>Venice-Airbnb-listings-and-real-estate-investment-analytics</h3>
+        <div class="meta">Data-driven insights for Airbnb investors in Venice using regression analysis and Power BI.</div>
         <div><span class="pill">Python</span><span class="pill">Regression</span><span class="pill">Power BI</span></div>
       </a>
       <a class="card" href="nuse/" target="_blank" rel="noreferrer">
-        <span class="thumb"><img src="images/nuse-cover.png" alt="Nuse AI platform cover"></span>
         <h3>NUSE — AI Platform for Financial Inclusion</h3>
-        <div class="meta">Voice‑driven financial assistant for micro‑entrepreneurs. Prototype with WhatsApp + GPT + Power BI.</div>
+        <div class="meta">Voice-driven financial assistant for micro-entrepreneurs. Prototype with WhatsApp + GPT + Power BI.</div>
         <div><span class="pill">Python</span><span class="pill">NLP</span><span class="pill">Power BI</span></div>
       </a>
     </div>
@@ -167,7 +171,7 @@ footer{padding:40px 0;color:var(--muted);text-align:center}
   <section id="contact">
     <h2>Contact</h2>
     <div class="divider"></div>
-    <div class="card"><p><strong>Email:</strong> <a href="mailto:essiviessenam.komlanvi@gmail.com">essiviessenam.komlanvi@gmail.com</a> · <strong>Phone:</strong> <a href="tel:+19522924410">+1 952‑292‑4410</a> · <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/essekom" target="_blank">/in/essekom</a> · <strong>GitHub:</strong> <a href="https://github.com/Essenam" target="_blank">@Essenam</a></p></div>
+    <div class="card"><p><strong>Email:</strong> <a href="mailto:essiviessenam.komlanvi@gmail.com">essiviessenam.komlanvi@gmail.com</a> · <strong>Phone:</strong> <a href="tel:+19522924410">+1 952-292-4410</a> · <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/essekom" target="_blank">/in/essekom</a> · <strong>GitHub:</strong> <a href="https://github.com/Essenam" target="_blank">@Essenam</a></p></div>
   </section>
 </main>
 
